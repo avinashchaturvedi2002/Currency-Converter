@@ -13,19 +13,16 @@
         <form>
             <div class="inputArea">
                 <p>Enter Amount</p>
-                <input type="text" name="input" value="100">
+                <input type="text" name="input" value="1">
             </div>
             <div class="exchangeArea">
            
-                <div class="country">
+                <div class="country from">
                     <div class="countryImg">
                         <img src="https://flagsapi.com/US/shiny/64.png">
                     </div>
-                    <select class="countryList">
-                        <option>USA</option>
-                        <option>India</option>
-                        <option>United Kingdom</option>
-                        <option>Canada</option>
+                    <select class="countryList" id="from">
+                        
                     </select>
                 </div>
                 
@@ -34,28 +31,28 @@
                     <i class="fa-solid fa-arrow-right-arrow-left"></i>
                 </div>
             
-                <div class="country">
+                <div class="country to">
                     <div class="countryImg">
                         <img src="https://flagsapi.com/IN/shiny/64.png">
                     </div>
-                    <select class="countryList">
-                        <option>USA</option>
-                        <option selected>India</option>
-                        <option>United Kingdom</option>
-                        <option>Canada</option>
+                    <select class="countryList" id="to">
+                        
                     </select>
                  
                 </div>
             
             </div>
             <div class="result">
-                <p>1 USD = 80 INR</p>
+                <p id="msgbox"></p>
+                <p id="lastUpdated"></p>
             </div>
             <div class="button">
-                <button>Convert</button>
+                <button id="convert">Convert</button>
             </div>
         </form>
         
     </div>
+    <script src="code.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
